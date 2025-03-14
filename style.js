@@ -34,8 +34,8 @@ function displayTask(){
             <p>- ${taskList[i].taskStat}</p>
             <p>- ${taskList[i].taskProj}</p>
             <div class"justify-content-end">
-            <a onclick="deleteTask(${i})" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-            <a onclick="goToupdate(${i})" class="btn btn-primary"><i class="fa-solid fa-pen"></i></a>
+            <a onclick="deleteTask(${i})" class="btn btn-danger"><i class="fa fa-solid fa-trash"></i></a>
+            <a onclick="goToupdate(${i})" class="btn btn-primary"><i class="fa fa-solid fa-pen"></i></a>
             </div>
             </div>
             </div> `
