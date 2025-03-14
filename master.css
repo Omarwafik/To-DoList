@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 140vh;
+}
+.navbar{
+    background-color: rgba(18, 42, 103, 1);
+}
+
+.navbar p{
+   font-family: "Italianno", cursive  ;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.inputs{
+    width: 35% ;
+}
+
+.text{
+    letter-spacing: 3px;
+    line-height: 40px;
+    text-align: left;
+    /* width: 30%; */
+    /* justify-content: space-around; */
+}
+
+.lines1::before
+{
+    content: "";
+    position: absolute;
+    background-color: white; /* Line color */
+    width: 7px; /* Line thickness */
+    height: 250px; /* Line height */
+    left: 44%;
+    top: 0;
+}
+
+.lines2::before{
+    content: "";
+    position: absolute;
+    background-color: white; /* Line color */
+    width: 7px; /* Line thickness */
+    height: 210px; /* Line height */
+    left: 49%;
+    top: 0;
+}
+.lines3::before{
+    content: "";
+    position: absolute;
+    background-color: white; /* Line color */
+    width: 7px; /* Line thickness */
+    height: 170px; /* Line height */
+    left: 55%;
+    top: 0;
+}
+
+.cont{
+    width: 75%;
+    margin: auto;
+    padding: 8px;
+    background-color: gray;
+}
+
+main,
+section{
+    background-color: rgba(39, 123, 192, 1);
+}
+
+.text2{
+    padding: 10px 90px;
+    border-radius:15px ;
+    color: rgba(19, 55, 255, 1);
+    background-color:white;
+}
+
+.theTask{
+    /* background-color: rgba(41, 222, 125, 1); */
+}

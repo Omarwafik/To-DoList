@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Italianno&display=swap" rel="stylesheet">  <title>TO DO List</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light text-light d-flex align-items-center justify-content-around  gap-5 p-2">
+        <div class="fs-3 ">
+          <i class="fa-solid fa-clipboard-list "></i>
+          <span class="navbar-brand fs-3 text-light">TO-DO List</span>
+        </div>
+        <div class="right fs-1 ">
+            <p >Welcome...</p> 
+        </div>
+    </nav>
+    <div class="cont mt-5">
+        <main class=" m-auto  p-4 d-flex  align-items-center position-relative rounded-4">
+            <div class="container  ">
+                <div class="inputs form-floating mb-3  fs-6">
+                    <input type="text" class="form-control" id="Taskname" placeholder="">
+                    <label for="Taskname">Task Name</label>
+                  </div>
+                  <div class="inputs form-floating mb-3">
+                    <input type="datetime-local" class="form-control" id="Taskdes" placeholder="">
+                    <label for="Taskdes">Task time</label>
+                  </div>
+    
+                  <div class="inputs form-floating mb-3">
+                    <input  list="stat" type="text" class="form-control" id="Taskstatus"placeholder=""/>
+                    <label for="Taskstatus">Task Status</label>
+                    <datalist id="stat">
+                      <option value="Not started"></option>
+                      <option value="In-Progress"></option>
+                      <option value="Done!"></option>
+                    </datalist>
+                  </div>
+                  <div class="inputs form-floating ">
+                    <input type="text" class="form-control" id="Taskproject" placeholder="">
+                    <label for="Taskproject">Task place</label>
+                  </div>
+            </div>
+            <div class="lines1"></div>
+            <div class="lines2"></div>
+            <div class="lines3"></div>
+            <div class="text fs-2 w-50">
+                <p class="text-light">BE THE BEST <br> VERSION OF <br> YOURSELF</p>
+            </div>
+        </main>
+
+        <section class="m-auto p-4 rounded-4 d-flex flex-column align-items-center gap-2">
+            <div class="d-flex justify-content-start align-items-center gap-2 w-100">
+                <button onclick=" addTask();" class="button bg-primary text-light p-2 rounded-2" id="addButton">Add Task</button>
+                <button onclick="updateTask()" class="button bg-danger text-light p-2 rounded-2 d-none" id="updateButton">Update</button>
+            </div> 
+            <p class="text2 fs-3 text-center w-100">Your Tasks</p>
+        </section>
+            
+
+        <div class="tasks mt-1 p-2 flex-column gap-2 text-light ">
+            <div class="theTask  " id="Task">
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="JS/style.js"></script>
+  </body>
+</html>
